@@ -2,6 +2,7 @@ import React, { useEffect, useState, useContext } from "react";
 import Image from "next/image";
 import Link from "next/link";
 
+
 //INTERNAL IMPORT
 import Style from "./NavBar.module.css";
 import { ChatAppContect } from "../../Context/ChatAppContext";
@@ -11,7 +12,7 @@ import images from "../../assets";
 const NavBar = () => {
   const menuItems = [
     {
-      menu: "All Users",
+      menu: "ALL USERS",
       link: "alluser",
     },
     {
@@ -19,21 +20,18 @@ const NavBar = () => {
       link: "/",
     },
     {
-      menu: "CONTACT",
-      link: "/",
+      menu: "CONTACT US",
+      link: "contactus",
     },
     {
-      menu: "SETTING",
-      link: "/",
+      menu: "ABOUT",
+      link: "about",
     },
     {
       menu: "FAQS",
-      link: "/",
+      link: "/faqs",
     },
-    {
-      menu: "TERMS OF USE",
-      link: "/",
-    },
+   
   ];
 
   //USESTATE
@@ -47,7 +45,7 @@ const NavBar = () => {
     <div className={Style.NavBar}>
       <div className={Style.NavBar_box}>
         <div className={Style.NavBar_box_left}>
-          <Image src={images.logo} alt="logo" width={50} height={50} />
+          <Image src={images.logo} alt="logo" width={70} height={70} />
         </div>
         <div className={Style.NavBar_box_right}>
           {/* //DESKTOP */}
@@ -135,10 +133,10 @@ const NavBar = () => {
         <div className={Style.modelBox}>
           <Model
             openBox={setOpenModel}
-            title="WELCOME TO"
-            head="CHAT BUDDY"
-            info="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate maxime assumenda exercitationem voluptatibus, vero aliquid in tempore aut, impedit dolores voluptate recusandae nulla fuga? Praesentium iusto mollitia sint fugit! Placeat?"
-            smallInfo="Kindley seclet your name..."
+            title="Welcome To"
+            head="D-Chat"
+            info="It's time to be the master of your own data!!!!!!"
+            smallInfo="Fill the form below to get started..."
             image={images.hero}
             functionName={createAccount}
             address={account}

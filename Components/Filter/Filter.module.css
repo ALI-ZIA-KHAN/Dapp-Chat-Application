@@ -6,8 +6,8 @@
 }
 
 .Filter_box{
-    display: flex;
-    justify-content: space-between;
+    /* display: flex;
+    justify-content: space-between; */
 }
 
 .Filter_box_left_search{
@@ -16,8 +16,8 @@
     gap: 1rem;
     border-radius: 2rem;
     padding-inline: 1rem;
-    background-color: rgba(0,0,0,0.25);
-    color: #f18303;
+    background-color:#e6ebf5;
+    color: #242321;
 }
 
 .Filter_box_left_search input{
@@ -25,7 +25,7 @@
     outline: none;
     border: none;
     padding: 1rem;
-    color: #f18303;
+    color: #1b1a19;
     width: 20rem;
 }
 

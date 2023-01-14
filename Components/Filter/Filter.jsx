@@ -18,10 +18,10 @@ const Filter = () => {
         <div className={Style.Filter_box_left}>
           <div className={Style.Filter_box_left_search}>
             <Image src={images.search} alt="image" width={20} height={20} />
-            <input type="text" placeholder="search.." />
+            <input type="text" placeholder="Search Your Friends...." />
           </div>
         </div>
-        <div className={Style.Filter_box_right}>
+        {/* <div className={Style.Filter_box_right}>
           <button>
             <Image src={images.clear} alt="clear" width={20} height={20} />
             CLEAR CHAT
@@ -30,7 +30,7 @@ const Filter = () => {
             <Image src={images.user} alt="clear" width={20} height={20} />
             ADD FRIEND
           </button>
-        </div>
+        </div> */}
       </div>
 
       {/* //MODEL COMPONENT */}

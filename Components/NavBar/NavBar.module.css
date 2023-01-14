@@ -1,34 +1,45 @@
 
 .NavBar{
     width: 80%;
-    margin:  3rem auto;
+    margin:  1.5rem auto;
     position: relative;
 }
 
-.NavBar_box{
+/* .NavBar_box{
     display: grid;
     grid-template-columns: 1fr 1.7fr;
     align-items: center;
     gap: 2rem;
+} */
+.NavBar_box{
+    display: grid;
+    grid-template-columns: 0.3fr 1.7fr;
+    align-items: center;
+    grid-gap: 0.5rem;
+    gap: 0.2rem;
 }
-
 .NavBar_box_right{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    font-family:'Arial';
+    font-weight: bolder;
 }
 
 .NavBar_box_right_menu{
     display: flex;
     align-items: center;
-    gap: 2rem;
+    gap:2rem;
     border-bottom: 2px solid transparent;
     transition:  all .3s ease-in-out;
+    color: #292F3F;
+    margin-right: 2%;
+    font-size: 500;
 }
 
 .active_btn{
-    color:  #F18303;
-    border-bottom: 2px solid #F18303;
+    color:  #0081C9;
+    border-bottom: 2px solid #0081C9;
     padding-bottom: .4rem;
 }
 
@@ -38,12 +49,12 @@
 }
 
 .NavBar_box_right_connect button{
-    background-color: rgba(0,0,0, 0.25);
+    background-color: #0081C9;
     padding: 1rem;
     border: none;
     border-radius: .5rem;
     font-size: 1.1rem;
-    color: #F18303;
+    color: #Ffffff;
     font-weight: 700;
     cursor: pointer;
 
@@ -67,7 +78,7 @@
 .modelBox{
     position: fixed;
     inset: 0 0 0 0;
-    background-color: #292F3F;
+    background-color: #FAF8F1;
     z-index: 77777777;
 }
 

@@ -26,7 +26,7 @@ const Model = ({
     <div className={Style.Model}>
       <div className={Style.Model_box}>
         <div className={Style.Model_box_left}>
-          <Image src={image} alt="buddy" width={700} height={700} />
+          <Image src={image} alt="buddy" width={450} height={500} />
         </div>
         <div className={Style.Model_box_right}>
           <h1>
@@ -48,7 +48,7 @@ const Model = ({
                 />
                 <input
                   type="text"
-                  placeholder="your name"
+                  placeholder="Enter your name"
                   onChange={(e) => setName(e.target.value)}
                 />
               </div>
@@ -76,7 +76,7 @@ const Model = ({
                   {""}
                   <Image src={images.close} alt="send" width={30} height={30} />
                   {""}
-                  Cancle
+                  Cancel
                 </button>
               </div>
             </div>

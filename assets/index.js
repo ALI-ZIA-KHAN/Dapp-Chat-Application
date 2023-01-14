@@ -1,4 +1,4 @@
-import logo from "./logo.png";
+import logo from "./messenger.gif";
 import close from "./close.png";
 import open from "./open.png";
 import search from "./search.png";
@@ -9,9 +9,9 @@ import file from "./file.png";
 import user from "./user.png";
 import clear from "./delete.png";
 import create from "./create.png";
-import create2 from "./create2.png";
+import create2 from "./plus.png";
 import buddy from "./buddy.png";
-import hero from "./hero.png";
+import hero from "./mainimg.gif";
 import account from "./account.png";
 import username from "./username.png";
 import friends from "./friends.png";
