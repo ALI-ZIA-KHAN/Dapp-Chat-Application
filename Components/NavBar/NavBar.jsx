@@ -29,7 +29,7 @@ const NavBar = () => {
     },
     {
       menu: "FAQS",
-      link: "/faqs",
+      link: "faq",
     },
    
   ];
