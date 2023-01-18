@@ -29,7 +29,7 @@ const NavBar = () => {
     },
     {
       menu: "FAQS",
-      link: "/faqs",
+      link: "faq",
     },
    
   ];
@@ -70,7 +70,7 @@ const NavBar = () => {
 
           {/* //MOBILE */}
           {open && (
-            <div className={Style.mobile_menu}>
+            <div style={{backgroundColor: "#F9F9F9"}} className={Style.mobile_menu}>
               {menuItems.map((el, i) => (
                 <div
                   onClick={() => setActive(i + 1)}

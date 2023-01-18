@@ -42,12 +42,12 @@ const Chat = ({
 
   // console.log(chatData.address, chatData.name);
   return (
-    <div className={Style.Chat}>
+    <div  className={Style.Chat}>
       {currentUserName && currentUserAddress ? (
-        <div className={Style.Chat_user_info}>
+        <div  className={Style.Chat_user_info}>
           <Image src={images.accountName} alt="image" width={70} height={70} />
-          <div className={Style.Chat_user_info_box}>
-            <h4>{currentUserName}</h4>
+          <div  className={Style.Chat_user_info_box}>
+            <h4  style={{paddingBottom: "20px"}}>{currentUserName}</h4>
             <p className={Style.show}>{currentUserAddress}</p>
           </div>
         </div>
@@ -55,22 +55,28 @@ const Chat = ({
         ""
       )}
 
-      <div className={Style.Chat_box_box}>
-        <div className={Style.Chat_box}>
+      <div  className={Style.Chat_box_box}>
+        <div  className={Style.Chat_box}>
           <div className={Style.Chat_box_left}>
             {friendMsg.map((el, i) => (
+              
               <div>
                 {el.sender == chatData.address ? (
+                  
                   <div className={Style.Chat_box_left_title}>
+                  
                     <Image
                       src={images.accountName}
                       alt="image"
                       width={50}
                       height={50}
                     />
+  
                     <span>
                       {chatData.name} {""}
-                      <small>Time: {converTime(el.timestamp)}</small>
+                      
+                      
+                      
                     </span>
                   </div>
                 ) : (
@@ -83,7 +89,7 @@ const Chat = ({
                     />
                     <span>
                       {userName} {""}
-                      <small>Time: {converTime(el.timestamp)}</small>
+                     
                     </span>
                   </div>
                 )}

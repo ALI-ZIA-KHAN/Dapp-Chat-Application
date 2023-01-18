@@ -96,7 +96,7 @@ export const ChatAppProvider = ({ children }) => {
       router.push("/");
       window.location.reload();
     } catch (error) {
-      setError("Something went wrong while adding friends, try again");
+      setError("Oops you are already friend!!!!");
     }
   };
 
